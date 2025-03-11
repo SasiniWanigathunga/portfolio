@@ -1,0 +1,517 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{natbib}  % For citations and references
+\usepackage{lipsum}  % For generating placeholder text
+\usepackage{multicol}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{geometry}
+\usepackage{comment}
+
+
+
+\geometry{margin=1in} % Set 1-inch margins on all sides
+
+\input{glyphtounicode}
+
+% -------------------- FONT --------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+% \begin{flushright}
+%   \vspace{-4pt}
+%   \color{gray}
+%   \item
+%   Last Updated on January 5th, 2025
+% \end{flushright}
+
+\begin{center}
+    \textbf{\Huge \scshape Sasini Wanigathunga} \\ \vspace{8pt}
+    \small 
+    %Electronic and Telecommunication Engineering Undergraduate \\ \vspace{1pt}
+    \faIcon{phone}
+    \href{tel:+94714332221}{\underline{+94 71 433 2221}}
+    \faIcon{github}
+    \href{https://github.com/SasiniWanigathunga}{\underline{SasiniWanigathunga}} $  $
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/sasiniwanigathunga/}{\underline{sasiniwanigathunga}} $  $
+    \faIcon{envelope}
+    \href{mailto:wanigathungasasini@gmail.com}
+    {\underline{wanigathungasasini@gmail.com}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \vspace{5pt}
+    \resumeSubheading
+      {University of Moratuwa, Sri Lanka}{Aug 2021 - Present}
+      {B.Sc. Engineering (Hons.) in Electronic and Telecommunication Engineering}{GPA: 3.88/4.0 (Up to semester 6)}
+      % {\href{https://drive.google.com/file/d/1_bYWXRzhmdrxdQs7WiAsYk2gqXgycKJt/view?usp=drive_link}{\faIcon{external-link-square-alt}}}
+      
+      \resumeItemListStart
+        \resumeItem{\textbf{Dean's List:} Semesters 1, 2, 3, 4 and 6}
+        \resumeItem{\textbf{Selected Coursework:} Deep Learning for Vision, Image Processing and Machine Vision, Pattern Recognition, Introduction to Engineering Optimization, Data Structures and Algorithms, Applied Statistics, Linear Algebra, Calculus, Neural Networks and Fuzzy Logic}
+      \resumeItemListEnd 
+    \vspace{5pt}
+    \resumeSubheading
+      {Sujatha Vidyalaya, Matara, Sri Lanka}{2011 - 2019}
+      {GCE Advanced Level - Physical Science Stream}{4As / Z-score - 2.6629}
+      \resumeItemListStart
+        \resumeItem{Combined Mathematics, Physics, Chemistry, General English}
+      \resumeItemListEnd  
+      
+\begin{comment}
+    \vspace{-5pt}
+    \subsection{Relevant Coursework}
+      \textbf{Coursera} \\
+      \vspace{5pt}
+      Machine Learning Specialization (DeepLearning.AI) {\href{https://coursera.org/share/d37a5ce6f910404aacdd2a42ad9a1b14}{\faIcon{external-link-square-alt}}} 
+      \vspace{-5pt}
+      \resumeItemListStart
+        \resumeItem{Supervised Machine Learning: Regression and Classification}
+        \resumeItem{Advanced Learning Algorithms}
+        \resumeItem{Unsupervised Learning, Recommenders, Reinforcement Learning}
+      \resumeItemListEnd
+      \vspace{5pt}
+      Neural Networks and Deep Learning (DeepLearning.AI)
+      {\href{https://coursera.org/share/42dcb0089eecb81ae570c9451c96abcf}{\faIcon{external-link-square-alt}}} \\
+      \vspace{5pt}
+      Deep Learning with PyTorch: Image Segmentation (Coursera Project Network) {\href{https://coursera.org/share/772fc64e307c9c214d744dba5dc43e0e}{\faIcon{external-link-square-alt}}} \\
+      \vspace{5pt}
+      \textbf{PiMORA JAM 1.2} \\
+      Raspberry Pi Jam series (Spark Branch - Electronic Club, University of Moratuwa) {\href{https://au.badgr.com/public/assertions/Cci2HnmeQ9WsxuhomDYw4g?identity__email=wanigathungasasini@gmail.com }{\faIcon{external-link-square-alt}}} 
+\end{comment}
+
+    \vspace{-5pt}
+    \subsection{Relevant Coursework}
+        \vspace{3pt}
+      \textbf{Coursera} \\
+      \vspace{2pt}
+      {\small
+      Machine Learning Specialization (DeepLearning.AI, Stanford University) \\
+      % \vspace{-5pt}
+      % \resumeItemListStart
+      %   \resumeItem{Supervised Machine Learning: Regression and Classification}
+      %   \resumeItem{Advanced Learning Algorithms}
+      %   \resumeItem{Unsupervised Learning, Recommenders, Reinforcement Learning}
+      % \resumeItemListEnd
+      \vspace{2pt}
+      % Deep Learning Specialization (DeepLearning.AI, Stanford University) 
+      Neural Networks and Deep Learning (DeepLearning.AI, Stanford University) \\
+      Structuring Machine Learning Projects
+      (DeepLearning.AI, Stanford University) \\
+      Machine Learning in the Enterprise
+      (Machine Learning on Google Cloud Specialization - Google Cloud) \\
+      % \vspace{-5pt}
+      % \resumeItemListStart
+      %   \resumeItem{Neural Networks and Deep Learning}
+      %   \resumeItem{Structuring Machine Learning Projects}
+      % \resumeItemListEnd
+      % \vspace{2pt}
+      % Introduction to Generative AI (Google Cloud) \\
+      % \vspace{8pt}
+      % \textbf{PiMORA JAM 1.2} \\
+      % \vspace{2pt}
+      % Raspberry Pi Jam series (Spark Branch - Electronic Club, University of Moratuwa)
+      }
+     
+  \resumeSubHeadingListEnd
+      
+\section{Experience}
+\resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{Machine Learning Engineer - Intern} $|$ \footnotesize{FcodeLabs, Sri Lanka}}{Nov - May 2024}      
+        \resumeItemListStart
+            \resumeItem{\textbf{Research project:} A novel approach for the automatic removal of Personally Identifiable Information (PII) directly from speech data.} 
+            \resumeItem{\textbf{Progress Magic (Company application):} Implemented modular Python packages with production-ready folder hierarchy and unit testing (pytest) for privacy data masking and emotion recognition in textual data. (Natural Language Processing) / Modified a LLM-based activity suggestion solution. (OpenAI API, Prompt Engineering)}
+        \resumeItemListEnd                
+    \resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{Visiting Instructor} $|$ \footnotesize{University of Moratuwa, Sri Lanka}}{Feb - Apr 2024}      
+        \resumeItemListStart
+            \resumeItem{Worked as a visiting instructor for EN1094: Laboratory Practice}
+        \resumeItemListEnd                
+    \resumeSubHeadingListEnd
+
+% -------------------- PUBLICATIONS --------------------
+\section{Publications}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{Test-Time Optimization for Domain Adaptive Open Vocabulary Segmentation} $|$ 
+          \footnotesize\emph{CVPR 2025}\vspace{8pt}}{Under Review}
+          {\small{U De Silva, D Samaraweera, \underline{S Wanigathunga}, K Kariyawasam, K Ranasinghe, M Naseer, R Rodrigo}}
+    \resumeSubHeadingListEnd
+
+% -------------------- PROJECTS --------------------
+\section{Selected Projects}
+    \resumeSubHeadingListStart
+        \vspace{5pt}
+        \resumeProjectHeading
+        {\textbf{Vision Language Models - Final Year Project}}{Jun 2024 - Present}
+        \resumeItemListStart
+            \vspace{5pt}
+            \textbf{\small Domain Adaptive Open Vocabulary Semantic Segmentation} $|$ \footnotesize\emph{Computer Vision, VLMs, Prompt Learning}
+            % \resumeItem{Skills: Computer Vision, Deep Learning, Vision Language Models, Prompt Learning}
+            \vspace{2pt}
+            \resumeItem{Developed a novel test-time optimization framework for open vocabulary semantic segmentation (OVSS) on specialized-domain tasks and evaluated across 22 challenging domain specific datasets and obtained overall +2.03 mIoU improvement over the state-of-the-art.}
+        \resumeItemListEnd
+        
+        \resumeProjectHeading
+        {\textbf{Audio Named Entity Recognition} $|$ \footnotesize\emph {Natural Language Processing, Named Entity Recognition}}{Mar 2024 - Present}
+        \resumeItemListStart
+            % \vspace{2pt}
+            % \resumeItem{Skills: Audio Signal Processing, Deep Learning, Natural Language Processing, Named Entity Recognition}
+            \vspace{2pt}
+            \resumeItem{Developed a novel approach for text-independent PII removal in speech data. Prepared a time-aligned NER annotated English speech dataset and implemented an end-to-end model architecture. Achieved improved accuracy and low latency over existing work.}
+            \vspace{2pt}
+            % \resumeItem{Careful annotation and labeling of PII instances in the dataset (dataset preparation and preprocessing), as well as adaptation and optimization of the OpenAI Whisper model for the desired task, and implementation of postprocessing and a custom evaluation metric}
+            % \resumeItem{Prepared a custom dataset, implemented an end-to-end model architecture and achieved improved results with low latency compared to existing work.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{ProjectPulseAI }{\href{https://github.com/SasiniWanigathunga/ProjectPulseAI.git}{\faIcon{external-link-square-alt}}} $|$ \footnotesize\emph{LLMs, Groq, RAG, Next.js, Jira API, AstraDB}}{Ongoing}
+        \resumeItemListStart
+            \vspace{2pt}
+            \resumeItem{Developed a LLM-powered application for project managers using Retrieval-Augmented Generation (RAG) to integrate project documents, company resources, web links, and Jira issue tracking.}
+        \resumeItemListEnd
+   
+        \resumeProjectHeading
+        {\textbf{Ophthalmic Biomarker Detection {\href{https://github.com/SasiniWanigathunga/VIP-Cup-2023.git}{\faIcon{external-link-square-alt}}}} $|$ \footnotesize\emph{Computer Vision, Deep Learning}}{Aug - Oct 2023}
+        \resumeItemListStart
+            \vspace{2pt}
+            \resumeItem{Optimized the algorithm to predict the presence or absence of 6 different biomarkers on OCT scan images. Tested with different preprocessing techniques and backbones and optimized the model by changing the classification layers.}
+            % \resumeItem{World Rank 6 in IEEE SPS Video and Image Processing (VIP) Cup 2023}
+            %\resumeItem{Solved problems relating to asynchronous tasks}
+            % \resumeItem{Optimized UX (User Experience) e.g. bought a simple domain name, made documentation, recorded a setup \& demo video, customization through URL arguments}
+            % \resumeItem{Published to GitHub and obsproject.com}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Diabetic Retinopathy Severity Grading {\href{https://drive.google.com/file/d/19k5OUWShbACEiaVxTCsiLiRc2OW6bonW/view?usp=sharing}{\faIcon{external-link-square-alt}}}} $|$ \footnotesize\emph{Computer Vision, Deep Learning}}{Oct 2023}
+        \resumeItemListStart
+            \vspace{2pt}
+            \resumeItem{Replicated an existing work to determine the stage of diabetic retinopathy and tested with different backbones and preprocessing techniques.}
+            
+            % \resumeItem{Published to GitHub and spigotmc.org}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Mimicking Shakespearean Dialogue with Transformers {\href{https://github.com/SasiniWanigathunga/Transformers.git}{\faIcon{external-link-square-alt}}}} $|$ \footnotesize\emph{Natural Language Processing}}{June 2024}
+        \resumeItemListStart
+            \vspace{2pt}
+            \resumeItem{Implemented a Transformer model from scratch to automatically generate dialogues or monologues that closely resemble the style of Shakespeare's plays.}
+        \resumeItemListEnd
+
+        % \resumeProjectHeading
+        % {\textbf{GPT-2 from scratch {\href{https://github.com/SasiniWanigathunga/GPT-2_from_scratch.git}{\faIcon{external-link-square-alt}}}} $|$ \footnotesize\emph{Transformers, Natural Language Processing}}{July 2024}
+        % \resumeItemListStart
+        %     \vspace{2pt}
+        %     \resumeItem{Implemented a Transformer model from scratch closely following the "Attention Is All You Need" architecture, and validated its performance on language modeling.}
+        % \resumeItemListEnd
+
+        % \resumeProjectHeading
+        % {\textbf{2023 ACM/IEEE TinyML Design Contest at ICCAD{\href{https://github.com/SasiniWanigathunga/TinyMLContest2023.git}{\faIcon{external-link-square-alt}}}}}{Oct 2023}
+        % \resumeItemListStart
+        %     \vspace{2pt}
+        %     \resumeItem{Designing and implementing a machine learning algorithm to automatically discriminate life-threatening VAs from IEGM recordings and to be deployed and run on a STM32F303K8T6 development board}
+        %     \vspace{2pt}
+        %     \resumeItem{Optimizing the given algorithm to achieve a better detection precision, memory occupation, and inference latency}
+            
+        %     % \resumeItem{Published to GitHub and spigotmc.org}
+        % \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Software Design Competition }{\href{https://github.com/SasiniWanigathunga/SDC_Tesseract.git}
+        {\faIcon{external-link-square-alt}}} $|$ \footnotesize\emph{Unity, C\# Programming}}{Jan - July 2024} 
+        \resumeItemListStart
+            % \vspace{2pt}
+            % \resumeItem{Skills: Unity, C\# Programming}
+            \vspace{2pt}
+            \resumeItem{Designed a game using Unity with WebGL including API authentication, player profile, a questionnaire that can be opened using a web browser, dynamic and interactive game environment and a leaderboard.}
+        \resumeItemListEnd
+
+        % \resumeProjectHeading
+        % {\textbf{Non-pipelined Single Stage (Cycle) RISC-V Processor Design }{\href{https://github.com/SasiniWanigathunga/Single_Cycle_RISCV_Processor.git}{\faIcon{external-link-square-alt}}} $|$ \footnotesize\emph{SystemVerilog, Xilinx}}{Sep - Oct 2023}
+        % \resumeItemListStart
+        %     % \vspace{2pt}
+        %     % \resumeItem{Skills: SystemVerilog, Xilinx}
+        %     \vspace{2pt}
+        %     \resumeItem{Designed a 32 bit non-pipelined RISC-V processor using Microprogramming with 3 bus structure using RV32I implementation.}
+        % \resumeItemListEnd
+        
+        % \resumeProjectHeading
+        % {\textbf{Coursera Project Network}}{Sep 2023}
+        % \resumeItemListStart
+        %     \vspace{2pt}
+        %     \resumeItem{Skills: PyTorch, Image Segmentation, Computer Vision}
+        %     \vspace{2pt}
+        %     \resumeItem{Deep Learning with PyTorch: Image Segmentation {\href{https://coursera.org/share/772fc64e307c9c214d744dba5dc43e0e}{\faIcon{external-link-square-alt}}}}
+        %     \vspace{2pt}
+        %     \resumeItem{Deep Learning with PyTorch : Object Localization {\href{https://coursera.org/share/83e9998acf982cefa584e982b0518f26}{\faIcon{external-link-square-alt}}}}               
+        %     % \resumeItem{Published to GitHub and spigotmc.org}
+        % \resumeItemListEnd
+        
+        % \resumeProjectHeading
+        % {\textbf{Mini Weather Station {\href{https://medium.com/@wanigathungasasini/weatherwise-a-fascinating-journey-into-weather-monitoring-8f8326b2479e}{\faIcon{external-link-square-alt}}}} $|$ \footnotesize\emph{Altium, Solidworks, C++ Programming}}{July 2023}
+        % \resumeItemListStart
+        %     \vspace{2pt}
+        %     \resumeItem{Developed a  user-friendly mini weather station with integrated remote monitoring via web dashboard and mobile app.}
+        % \resumeItemListEnd
+
+        % \resumeProjectHeading
+        % {\textbf{Hospital Waste Segregation}}{June 2023}
+        % \resumeItemListStart
+        %     \vspace{2pt}
+        %     \resumeItem{Engaged in conceptualizing a hospital waste segregation using a robot arm and a smart waste bin}
+        %      %\resumeItem{}
+            
+        %     % \resumeItem{Published to GitHub and spigotmc.org}
+        % \resumeItemListEnd
+          
+        % \resumeProjectHeading
+        % {\textbf{High Frequency Amplifier {\href{https://github.com/Team-CKTS/High-Frequency-Amplifier.git}{\faIcon{external-link-square-alt}}}}}{Feb 2023}
+        % \resumeItemListStart
+        %     \vspace{2pt}
+        %     \resumeItem{Skills: Enclosure Designing (Solidworks), Electronic Simulation (Multisim), Analog Circuit Design}
+        %     \vspace{2pt}
+        %     \resumeItem{Designed a high-frequency amplifier with minimal distortion and amplitude loss, capable of driving an 8 $\Omega$ speaker, meeting specifications including a bandwidth of 20 kHz - 100 kHz with a 0.1Vp-p input signal.}
+        % \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Robot Design and Competition {\href{https://github.com/SasiniWanigathunga/EN2533-RobotDesignandCompetition.git}{\faIcon{external-link-square-alt}}}} $|$ \footnotesize\emph{Arduino, Webots, C++ Programming}}{Feb 2023}
+        \resumeItemListStart
+            \vspace{2pt}
+            \resumeItem{Designed a simulation of a robot capable of identifying chess piece positions and performing checkmate.}
+            % (line following, segmented wall following, colour detecting, object picking \& placing, climbing through ramps and searching.)
+        \resumeItemListEnd
+        
+          
+    \resumeSubHeadingListEnd
+
+% -------------------- AWARDS AND SCHOLARSHIPS --------------------
+% \section{Awards and Scholarships}
+%     \resumeSubHeadingListStart
+%         \vspace{5pt}
+%         \resumeSubheading
+%             {Dean's List}{Aug 2021 - Present}
+%             {Semesters 1, 2, 3, 4, 6 and 7}{}
+%         \resumeSubheading
+%             {IEEE SPS Video and Image Processing (VIP) Cup 2023}{Aug - Sep 2023}
+%             {\textbf{6th Place in World} $|$ Team : TESSERACT}{}
+%             \resumeItemListStart
+%                 \resumeItem{Achieved F1 score of 0.7921 for predicting the presence or absence of six different ophthalmic bio-markers simultaneously}
+%             \resumeItemListEnd
+%         \resumeSubheading
+%           {IEEEXtreame 17.0}{Oct 2023}
+%           {World Rank 389 $|$ Country Rank 26}{}
+%         \resumeSubheading
+%           {IEEEXtreame 16.0}{Oct 2022}
+%           {World Rank 874 $|$ Country Rank 61}{}
+%         \resumeSubheading
+%           {Mahapola Higher Education (Merit) Scholarship}{Aug 2021}
+%           {For outstanding performance in GCE A/L Examination ; Ranked 97 in the country}{}
+%         \resumeSubheading
+%           {Colours Award - Sujatha Vidyalaya}{2017}
+%           {Awarded for performance in chess at national level}{}
+%     \resumeSubHeadingListEnd
+
+\section{Awards and Scholarships}
+\begin{itemize}[leftmargin=0pt, label={}]
+    \item \textbf{\small{World Rank 6 in IEEE SPS Video and Image Processing (VIP) Cup 2023} \hfill \textit{Aug - Sep 2023}} \\
+    \small{Team: TESSERACT $|$ Achieved F1 score of 0.7921 for ophthalmic biomarkers detection.}
+
+    \item \textbf{\small{IEEEXtreme 17.0} $|$ \small{\textbf{World Rank: 389} $|$ \textbf{Country Rank: 26}} \hfill \textit{Oct 2023}} \\
+    
+    \item \textbf{\small{IEEEXtreme 16.0} $|$ \small{\textbf{World Rank: 874} $|$ \textbf{Country Rank: 61}} \hfill \textit{Oct 2022}} \\
+
+    \item \textbf{\small{Mahapola Higher Education (Merit) Scholarship} \hfill \textit{Aug 2021}} \\
+    \small{Awarded for outstanding performance in GCE A/L Examination $|$ Ranked 97th in the country.}
+
+    % \item \textbf{Colours Award - Sujatha Vidyalaya} \hfill \textit{2017} \\
+    % Awarded for performance in chess at the national level.
+\end{itemize}
+
+
+
+% -------------------- EXPERIENCE --------------------
+\section{Leadership Experience}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{\small{IEEE Industrial Electronics Society Student Branch Chapter - University of Moratuwa}}}{}
+        \resumeItemListStart
+            \resumeItem{\small{Secretary, Chief Editor, Assistant Editor, Member of Public Relations Team}}
+            % \vspace{2pt}
+            % \resumeItem{Chief Editor (Sep 2023 - Sep 2024)}
+            % \vspace{2pt}
+            % \resumeItem{Assistant Editor (Sep 2022 - Sep 2023)}
+            % \vspace{2pt}
+            % \resumeItem{Member of Public Relations Team (Sep 2021 - Present)}
+        \resumeItemListEnd
+    %\vspace{-5pt}
+    \resumeProjectHeading
+        {\textbf{\small{Electronic Club - University of Moratuwa}}}{}
+        \resumeItemListStart
+            \resumeItem{\small{Chairperson for two webinars, Student Editor-in-Chief for the E-Carrier magazine, Editor, Sub Editor}}
+            % \resumeItem{Chair person - Webinar on 'Path towards a successful publication' (Sep 2023)}
+            % \vspace{2pt}
+            % \resumeItem{Chair person - Webinar on 'Visual SLAM' (Sep 2023)}
+            % \vspace{2pt}
+            % \resumeItem{Editor (Aug 2023 - Aug 2024) (Student Editor-in-Chief for the E-carrier magazine October 2023)}
+            % \vspace{2pt}
+            % \resumeItem{Sub Editor (May 2022 - Aug 2023) (Student Editor-in-Chief for the E-carrier magazine October 2022)}
+
+%{\href{https://ent.uom.lk/wp-content/uploads/2022/11/E-Carrier-2022-Oct-Issue.pdf}{\faIcon{external-link-square-alt}}}
+        \resumeItemListEnd
+    %\vspace{-5pt}
+    \resumeProjectHeading
+        {\textbf{\small{AIESEC in Colombo South, Sri Lanka}}}{}
+        \resumeItemListStart
+            \resumeItem{\small{Content Specialist in Public Relations and Marketing Team, iGT International Relations and Matching Team}}
+            % \vspace{2pt}
+            % \resumeItem{Content Specialist in Public Relations and Marketing Team $|$ Winter 22.23 (Aug 2022 - Apr 2023)}
+            % \vspace{2pt}
+            % \resumeItem{iGT International Relations and Matching Team Member (Jan 2022 - Aug 2022)}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    {\small
+    \small{\item{
+    \vspace{5pt}
+     \textbf{Languages}{: English (Professional proficiency), Sinhala (Native proficiency)} \\
+    \vspace{5pt}
+     \textbf{Programming Languages}{: Python, C++ (Novice), C\# (Novice), \LaTeX} \\
+    \vspace{5pt}
+     \textbf{Software \& Tools}{: VS Code, Git/GitHub, Hugging Face, Kaggle, Docker, AWS (Novice), MATLAB, Unity}\\
+     \vspace{5pt}
+     \textbf{Frameworks}{: PyTorch, Tensorflow, spaCy, NLTK, Nemo}\\
+    \vspace{5pt}
+     \textbf{Sports}{: Chess (FIDE Rating - 1219)}
+     }
+    }}
+ \end{itemize}
+
+% -------------------- REFERENCES --------------------
+\section{References}
+\vspace{-12pt}
+\begin{multicols}{2} % Start two-column layout
+    {\scriptsize 
+  \textbf{Dr. Ranga Rodrigo} \\
+      Head of the Department\\
+      Department of Electronic and Telecommunication Engineering,\\
+      Faculty of Engineering,\\
+      University of Moratuwa, Sri Lanka\\
+      Tel: +94 11 264 0416\\
+      Email: head-entc@uom.lk\\
+    \columnbreak
+    \textbf{Dr. Sampath K. Perera} \\
+    B.Sc. Eng. (Moratuwa), M.E.Sc. (Western), Ph.D. (RUB), MIEEE\\
+      Senior Lecturer\\
+      Department of Electronic and Telecommunication Engineering,\\
+      Faculty of Engineering,\\
+      University of Moratuwa, Sri Lanka\\
+      Tel: +94 70 572 6264\\
+      Email: sampathk@uom.lk\\
+      }
+
+\end{multicols}
+
+\end{document}
